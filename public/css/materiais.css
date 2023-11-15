@@ -1,0 +1,392 @@
+/* Reset de estilos padrão do navegador */
+body, ul {
+  margin: 0;
+  padding: 0;
+  
+}
+ .fundo-verde{
+  background-color: #cdeac5;
+ }
+
+.centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  background-color: green;
+  font-size: 120%; /* Aumenta o tamanho da fonte em 20% em relação ao tamanho padrão */
+  font-weight: bold;
+  
+}
+header img{
+  border-radius: 1000px;
+  padding: 5px;
+  border: 1px solid #fff ;
+  background-color: #fff;
+}
+header a{
+  text-decoration: none;
+  color: black;
+  
+}
+header .nav a{
+  border-radius: 10px;
+  color: #fff;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+header .nav li{
+  margin: 0 5px;
+  border-radius: 5px;
+  
+}
+header .nav a:hover{
+  background-color: #f2f2f2;
+  color: green;
+}
+
+main {
+  background-color: rgb(232, 252, 207);
+}
+/*estilizando a barra de rolagem*/
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c9c1c1;    /* color of the scroll thumb */
+     /* roundness of the scroll thumb */
+}
+
+  
+  /*cards*/
+
+
+ 
+  .carde{
+    
+    
+    margin-left: 7.5%;
+    margin-top: 5%;
+    position: relative;
+    width: 85%;
+    height: 300px;
+    color: #2e2d31;
+    background: #6da15f;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 6%;
+  } 
+
+  .temporaryy_text {
+    
+    font-weight: bold;
+    font-size: 26px;
+    padding: 6px 12px;
+    color: #ffffff;
+    background-image: url('/img/fundo6.png'); /* Caminho relativo ao diretório public */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o contêiner */
+    background-position: center; /* Centraliza a imagem no contêiner */
+}
+  
+  .card_title {
+    font-weight: bold;
+  }
+  .carde_title{
+    font-weight: bold;
+    
+  }
+  
+  .carde_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+      /* edit the width to fit card */
+    width: 100%;
+    padding: -1px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+      /* edit here to change the height of the content box */
+    transform: translateY(150px);
+    transition: transform .25s; 
+    text-align: center;
+  }
+  
+  .carde_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+  }
+  
+  .carde_title {
+    color: #109638;
+    line-height: 15px;
+  }
+  .card_title {
+    color: #109638;
+    line-height: 15px;
+  }
+  
+  .carde_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .carde_description {
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity .5s;
+    text-align: center;
+
+  }
+  
+  .carde:hover .carde_content {
+    transform: translateY(0);
+  }
+  
+  .carde:hover .carde_description {
+    opacity: 1;
+    transition-delay: .25s;
+  }
+
+
+  .materiais2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    width: 100;
+    background-color: #6da15f;
+  }
+  
+  
+
+  /* .card  {
+    width: 200px;
+    height: 350px;
+    border-radius: 20px;
+    transition: all .3s;
+    display: flex;
+    float: left;
+    
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px #2e2d31;
+    padding: 10px;
+   } */
+
+
+   h1{
+    color: #90e4ac;
+   }
+   
+   .card {
+    width: 200px;
+    margin-left: 7.5% ;
+    margin-top: 3%;
+    padding-bottom: 10px;
+    background-color: #132e20;
+    border: 1px solid #333 !important;
+    border-radius: 5px;
+    transition: all .2s;
+    color: #f8f8f8;
+    box-shadow: -3px -3px #333;
+    background-position: top;
+    background-size: cover;
+   }
+   .card h3{
+    text-align: center;
+    background-color: #52b69a;
+    padding: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+   }
+   .card p{
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+   }
+  .card .button-material{
+    padding: 5px;
+    font-weight: bold;
+    font-size: small;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 15px;
+    width: 100px;
+  }
+  .card-conteudo{
+    height: 300px;
+    font-weight: bold;
+  }
+  .card-conteudo p{
+    color: #333;
+    text-shadow: 2px 2px #52b69a;
+    display: inline-block; /* Para que o backdrop-filter funcione corretamente */
+    backdrop-filter: blur(1px); /* Ajuste o valor de acordo com a intensidade do desfoque desejado */
+  }
+
+   
+  .cardz  {
+    width: 200px;
+    height: 350px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3cff00 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    display: flex;
+    /* float: left; */
+    margin-left: 7.5% ;
+    margin-top: 3%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 20px 2px #2e2d31;
+   }
+   
+   .cardz:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.3);
+   }
+  
+  
+   .button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: rgb(3, 52, 36);
+    z-index: 1;
+    margin-bottom: 2%;
+    
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+   }
+   
+   .button:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .button:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+
+  
+  
+  /*popup*/
+  .popup {
+    z-index: 100;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 55px;
+}
+
+/*estilizando a barra de rolagem*/
+.popup-conteudo::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+.popup-conteudo::-webkit-scrollbar-track {
+  background: #fff;        /* color of the tracking area */
+}
+
+.popup-conteudo::-webkit-scrollbar-thumb {
+  background-color: #c9c1c1;    /* color of the scroll thumb */
+     /* roundness of the scroll thumb */
+}
+
+.popup-conteudo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ecf7ec;
+  color: black;
+  font-size: 140%;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: auto;
+  height: 90%;
+  width: 50%;
+  border: 2px solid #000;
+  /* background-image: url('../img/materiais/reciclar.webp'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  backdrop-filter: blur(15px);
+}
+.popup-conteudo div{
+  margin: 15px 0;
+  
+  height: 90%;
+  width: 100%;
+}
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+
